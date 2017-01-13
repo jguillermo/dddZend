@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.4/phpunit.xsd"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         verbose="true"
+         syntaxCheck="true"
+         stopOnError="false"
+         stopOnFailure="false"
+         backupGlobals="false"
+         bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="MisaIntegrationTests">
+            <directory>module/MisaCore/testIntegration/Config</directory>
+            <directory>module/MisaCore/testIntegration/Seed</directory>
+            <file>module/MisaCore/testIntegration/Service/Person/PersonTest.php</file>
+            <file>module/MisaCore/testIntegration/Service/Person/EmployeeTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
